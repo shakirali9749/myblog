@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <form method="post">
+        What is your birthday ?
+        <br>
+        <label> Month
+            <input name="month" value={{month}}>
+        </label>
+        <label> Day
+            <input name="day" value={{day}}>
+        </label>
+        <label> Year
+            <input name="year" value={{year}}>
+        </label>
+
+        {% if error %}
+            <div style="color:red;">
+                {{error}}
+            </div>
+        {% endif %}
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
